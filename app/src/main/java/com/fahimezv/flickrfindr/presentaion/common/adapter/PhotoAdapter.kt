@@ -45,6 +45,7 @@ class PhotoAdapter(
         }
 
         override fun onClick(view: View?) {
+            if(bindingAdapterPosition==-1) return
             getItem(bindingAdapterPosition)?.let { photo->
                 onPhotoClickListener.invoke(photo)
             }
