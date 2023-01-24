@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.fahimezv.flickrfindr.presentaion.feature.search.SearchFragment"
+        android:label="SearchFragment" >
+
+        <action
+            android:id="@+id/action_searchFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.fahimezv.flickrfindr.presentaion.feature.info.InfoFragment"
+        android:label="InfoFragment" >
+
+        <argument
+            android:name="photo"
+            app:argType="com.fahimezv.flickrfindr.core.model.Photo" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.fahimezv.flickrfindr.presentaion.feature.bookmark.BookmarkFragment"
+        android:label="BookmarkFragment" >
+        <action
+            android:id="@+id/action_bookmarkFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+</navigation>

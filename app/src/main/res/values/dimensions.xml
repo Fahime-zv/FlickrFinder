@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_item_list_corner">10dp</dimen>
+    <dimen name="halfPadding">10dp</dimen>
+    <dimen name="padding">20dp</dimen>
+    <dimen name="padding2X">40dp</dimen>
+    <dimen name="padding3X">60dp</dimen>
+    <dimen name="backIconSize">60dp</dimen>
+    <dimen name="logoIconSize">40dp</dimen>
+</resources>

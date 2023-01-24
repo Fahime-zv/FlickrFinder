@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlickrFinder</string>    <string name="anErrorOccurred">"An error occurred while processing the request."</string>
+    <string name="emptyResult">"Item not found."</string>
+    <string name="search">"Search"</string>
+    <string name="hi">Hi ✋  Welcome to Filckr Finder!!</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="clearhistory">Clear history</string>
+    <string name="historyCleared">Your History Cleared :)</string>
+    <string name="boomark">Bookmark</string>
+    <string name="unbookmark">UnBookmark</string>
+</resources>

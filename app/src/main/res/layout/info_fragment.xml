@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backImageView"
+        android:layout_width="@dimen/backIconSize"
+        android:layout_height="@dimen/backIconSize"
+        android:padding="@dimen/padding"
+        app:srcCompat="@drawable/back" />
+
+    <LinearLayout
+        android:id="@+id/header_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/serch_header_background"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSection_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/info_background"
+        android:gravity="center_horizontal"
+        android:minHeight="300dp"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fullPicture_ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:scaleType="fitCenter" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="@integer/material_motion_duration_long_2"
+            android:singleLine="false"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/bookMarkbutton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textOn="@string/unbookmark"
+            android:textOff="@string/boomark"
+            android:textColor="@color/white"
+            android:background="@drawable/bookmark_background" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
