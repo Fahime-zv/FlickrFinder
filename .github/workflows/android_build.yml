@@ -4,15 +4,14 @@ on: pull_request
 
 jobs:
   build:
+ 
+   runs-on: ubuntu-latest
 
-    runs-on: ubuntu-latest
+    steps:
+     - uses: action/checkout@v1
 
-  steps:
-    - uses: action/checkout@v1
+     - name: Run Tests
+       run: ./gradlew test
 
-
-  - name: Run Test
-      run: ./gradlew test
-
-  - name: Build Project
-      run: ./gradlew assemble
+     - name: Build Project
+       run: ./gradlew assemble
