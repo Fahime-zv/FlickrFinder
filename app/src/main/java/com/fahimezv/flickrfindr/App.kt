@@ -12,6 +12,7 @@ class App:Application() {
 
         super.onCreate()
 
+
         // Setup Koin
         startKoin {
             androidLogger()
