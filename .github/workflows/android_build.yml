@@ -1,0 +1,16 @@
+name: Android Build
+
+on: pull_request
+
+jobs:
+  build: ubuntu-latest
+
+  steps:
+    uses: action/checkout@v1
+
+
+  - name: Run Test
+      run: ./gradlew test
+
+  - name: Build Project
+      run: ./gradlew assemble
